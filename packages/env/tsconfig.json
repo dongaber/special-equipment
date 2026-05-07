@@ -1,0 +1,7 @@
+{
+  "extends": "@special-equipment/typescript-config/node.json",
+  "include": ["index.ts"],
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}

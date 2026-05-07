@@ -1,0 +1,14 @@
+{
+  "name": "@special-equipment/env",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "@special-equipment/typescript-config": "workspace:*",
+    "@types/node": "^22.0.0",
+    "typescript": "5.5.4"
+  }
+}
