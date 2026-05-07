@@ -1,8 +1,8 @@
 import { node } from "@elysiajs/node";
 import { Elysia } from "elysia";
-import { env } from "./env.ts";
-import { createBot } from "./bot.ts";
-import { webhookRoute } from "./routes/webhook.ts";
+import { env } from "./env.js";
+import { createBot } from "./bot.js";
+import { webhookRoute } from "./routes/webhook.js";
 
 const bot = createBot();
 

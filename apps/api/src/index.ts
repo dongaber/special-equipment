@@ -1,7 +1,7 @@
 import { node } from "@elysiajs/node";
 import { Elysia } from "elysia";
-import { env } from "./env.ts";
-import { healthRouter } from "./modules/health/router.ts";
+import { env } from "./env.js";
+import { healthRouter } from "./modules/health/router.js";
 
 const app = new Elysia({ adapter: node() })
     .use(healthRouter)

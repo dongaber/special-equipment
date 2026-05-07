@@ -10,7 +10,6 @@
     "types": ["node"],
     "sourceMap": true,
     "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "noUnusedLocals": true,

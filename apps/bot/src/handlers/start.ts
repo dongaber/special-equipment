@@ -1,6 +1,6 @@
 import { InlineKeyboard } from "grammy";
 import type { Context } from "grammy";
-import { env } from "../env.ts";
+import { env } from "../env.js";
 
 const keyboard = new InlineKeyboard().webApp("Open App", env.MINI_APP_URL);
 

@@ -1,6 +1,6 @@
 import { Bot } from "grammy";
-import { env } from "./env.ts";
-import { startHandler } from "./handlers/start.ts";
+import { env } from "./env.js";
+import { startHandler } from "./handlers/start.js";
 
 export function createBot() {
     const bot = new Bot(env.BOT_TOKEN);
