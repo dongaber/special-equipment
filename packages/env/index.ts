@@ -1,3 +1,24 @@
+import { existsSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { config } from "dotenv";
+
+function findEnvFile(startDir = process.cwd()) {
+    let currentDir = startDir;
+
+    while (true) {
+        const envPath = join(currentDir, ".env");
+        if (existsSync(envPath)) return envPath;
+
+        const parentDir = dirname(currentDir);
+        if (parentDir === currentDir) return undefined;
+
+        currentDir = parentDir;
+    }
+}
+
+const envPath = findEnvFile();
+if (envPath) config({ path: envPath });
+
 type EnvSource = Record<string, string | undefined>;
 type EnvKey = string | readonly string[];
 
